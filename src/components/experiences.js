@@ -2,7 +2,7 @@ const experiences = [
   {
     key: 1,
     image: "images/tomresearch.png",
-    title: "Independent Research: The Social Dilemma of Autonomous Vehicles",
+    title: "Independent Research: Ethical Issues with Autonomous Vehicles",
     date: "June 2020 - November 2020",
     location: "San Jose, CA",
     position: "Research Conductor, Analyzer, and Author",

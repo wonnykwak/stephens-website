@@ -185,4 +185,9 @@ p {
   position: relative;
 }
 
-/* Project Page css code */ 
+/* Project Page css code */
+
+.project-pictures {
+  width: 320px;
+  height: 200px;
+}
