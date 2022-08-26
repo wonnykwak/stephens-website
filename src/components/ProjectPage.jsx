@@ -1,21 +1,78 @@
-import React from 'react';
+import React , {useState} from 'react';
 import ReactDom from "react-dom";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-
-
+import Carousel from 'react-bootstrap/Carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import CarouselFadeExample from "./ProjectCarousel";
 
 
 function ProjectPage() {
-
+AOS.init();
   return (
+    <div className="project-section">
+      <h2 className="project-title title-heading"> My Projects</h2>
+      <hr className="title-hr"/>
     <div>
-    <h2> My Project</h2>
-    <a href="ethicsresearch.html"><img className="project-pictures" src="images/cuboulderimg.jpg"/></a>
+    <table id="table1">
+      <tr className="project-table">
+      <td data-aos="fade-in" className="project-table-cells">
+        <a className="project-button-hover" href="ethicsresearch.html">
+          <div className="project-hover">
+            <img class="project-pictures" src="images/airesearchpaper.png"/>
+            <div class="middle">
+              <div>
+                <h2 className="project-sub-heading"> AI Research Paper</h2>
+                <hr className="project-hr" />
+              </div>
+              <div class="project-text">
+                <p className="project-sub-info"> Ethical Dilemmas in AI Vehicles : Literature Review + Survery Results</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </td>
+      <td data-aos="fade-in" className="project-table-cells">
+      <a className="project-button-hover" href="curesearch.html">
+        <div className="project-hover">
 
+            <img className="project-pictures" src="images/cuboulderimg.jpg"/>
 
-    <img className="project-pictures" src="images/airesearchpaper.png"/>
-    <img className="project-pictures" src="images/stanfordneurodiversity.jpeg"/>
-</div>
+          <div class="middle">
+            <div>
+              <h2 className="project-sub-heading"> CU AI Research</h2>
+              <hr className="project-hr" />
+            </div>
+            <div class="project-text">
+              <p className="project-sub-info"> The Human Perception of AI : Literature Review + Survery Results</p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </td>
+      <td data-aos="fade-in" className="project-table-cells">
+      <a className="project-button-hover" href="snpresearch.html">
+        <div className="project-hover">
+
+            <img className="project-pictures" src="images/stanfordneurodiversity.jpeg"/>
+
+          <div class="middle">
+            <div>
+              <h2 className="project-sub-heading"> SNP Reach Project</h2>
+              <hr className="project-hr" />
+            </div>
+            <div class="project-text">
+              <p className="project-sub-info"> Stanford SNP Reach: Focsuing on Neurodiversity Awareness</p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </td>
+      </tr>
+    </table>
+
+    </div>
+    <CarouselFadeExample />
+    </div>
 )
 }
 

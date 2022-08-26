@@ -4,17 +4,71 @@ body, html {
 
 p {
   margin: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+  display: table;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    right: 20px;
+}
+#connect {
+  background-color: #F9F5EB;
+  height: 1700px;
+}
+#lineBreak {
+  border: 8px dotted;
+  height: 2px;
+  width: 16%;
+  border-top: 0;
+  border-color: black;
+  color: #F9F5EB;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+
+.title-hr {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: black;
+  border: 2px solid;
+}
+
+.title-heading {
+  font-family: 'Arvo' , serif;
+  font-size: 3em;
+}
+
+.title-heading2 {
+  font-family: 'Arvo' , serif;
+  font-size: 2em;
 }
 
 /* Front page css code */
 
-.front-title {
+.front-title-first {
   position: relative;
   color: black;
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
+  line-height: 0.5;
+  text-align: center;
+
+}
+.front-title{
+  padding-left: 10px;
+  position: relative;
+  color: black;
+  font-family: 'Arvo' , serif;
+  font-weight: bold;
   font-size: 5rem;
-  line-height: 0.9;
+  line-height: 0.5;
   text-align: center;
 }
+
 
 .front-background {
   min-height: 100%;
@@ -44,6 +98,7 @@ p {
   background-image: url('images/frontpage.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
       position: absolute;
@@ -57,25 +112,45 @@ p {
 /* Profile Page css code */
 
 .profile-page-div {
-  padding: 100px 200px 100px 200px;
-  height: 500px;
+  padding: 100px 250px 100px 250px;
+  height: 900px;
 }
 
-.profile-title {
+.profile-table {
+  display: table;
+    margin: 0 auto;
+}
+
+.profile-title-div {
   text-align: center;
   height: auto;
 }
 
+.profile-title {
+  font-family: 'Arvo' , serif;
+  font-size: 3em;
+}
+
 .profile-information {
   height: auto;
-
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 2;
+  text-align: center;
 }
 
 .profile-demographic {
   float: left;
   width: 50%;
   height: 200px;
+  text-align: center;
+  padding-top:3%;
 }
+
+.profile-demographic h2{
+  padding-bottom: 20px;
+}
+
 
 .profile-pictures-section {
   float: right;
@@ -95,10 +170,17 @@ p {
 }
 
 /* Education Page css code */
+#Education-Page{
+  background-color: #F9F5EB;
+}
+
+.education-heading {
+  height: 170px;
+}
 
 .education-page-section {
   padding: 100px 150px 100px 150px;
-  height: 500px;
+  height: 700px;
 }
 
 .education-title {
@@ -124,8 +206,9 @@ p {
 }
 
 .pomona-info {
-  margin-top: 150px;
+  margin-top: 20px;
   margin-right: 20px;
+  line-height: 1.6;
 }
 
 .education-bellarmine {
@@ -150,44 +233,219 @@ p {
 }
 
 .bellarmine-info {
-  margin-top: 150px;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 /* Experience Page css code */
 
 #Experience-Page {
-  background-color: #F7ECDE;
+  background-color: white;
+}
+.experience-cards {
+  padding-top: 50px;
 }
 
 .experience-page-section {
-  padding: 100px 200px 100px 200px;
-  height: 500px;
+  padding: 80px 250px 100px 250px;
+  height: auto;
 }
 
 .experience-title {
   text-align: center;
 }
 
-/* .experience-card-picture {
+.experience-card-picture {
   float: left;
-  width: 30%;
+  width: 100%;
   height: auto;
+  display: flex;
+  text-align: center;
+  margin-bottom: 90%;
 }
 
 .experience-card-info {
-  float: right;
-  width: 70%;
-} */
+  margin-bottom: 15%
+}
 
 .experience-pictures {
   width: 230px;
-  border-radius: 10%;
-  position: relative;
+  border-radius: 13%;
+
+  border: 2px solid;
+
+
 }
 
 /* Project Page css code */
+#Project-Page {
+  background-color: #EAE3D2;
+  height: 1000px;
+}
+
+
+.project-section {
+  text-align: center;
+}
+
+.project-title {
+  padding-top: 100px;
+}
 
 .project-pictures {
-  width: 320px;
-  height: 200px;
+  width: 390px;
+  height: 230px;
+  border: 3px solid;
+  border-color: #EAE3D2;
+  opacity: 1;
+
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.project-pictures:hover{
+  background-color: black;
+}
+
+.project-table {
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+table#table1 {
+  width: 100%;
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+.project-slides {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  text-align: center;
+}
+
+.carousel-pictures {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-carousel {
+  width: 600px;
+  height: 300px;
+  display: block;
+  margin: auto auto auto auto;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 45px;
+  right: 0;
+  height: 100%;
+  width: 390px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.project-hover:hover .middle {
+  opacity: 0.9;
+}
+
+.project-text {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .3s ease;
+  color: black;
+}
+
+.project-hr {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 2px solid black;
+  border-color: black;
+  color: black;
+  opacity: 1;
+}
+
+
+.project-sub-heading {
+  padding-top: 30px;
+  opacity: 1;
+  color: white;
+}
+
+
+.project-sub-info{
+  opacity: 1;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-hover:hover .project-text{
+  width: 100%;
+  left: 0;
+}
+
+
+
+
+/* Baseball Page css code */
+#Baseball-Page {
+  height: 1300px;
+}
+
+.baseball-heading {
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+.baseball-slides {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  text-align: center;
+}
+
+.baseball-pictures {
+  width: 95%;
+  height: 900px;
+
+}
+
+.baseball-carousel {
+  padding-top: 50px;
+  width: 100%;
+  height: 700px;
+  display: block;
+  margin: auto auto auto auto;
+}
+
+/* Contact Me Page css code */
+#Contact-Page {
+  background-color: #607EAA;
+  height: 500px;
+}
+
+.contact-heading {
+  text-align: center;
+  color: white;
 }

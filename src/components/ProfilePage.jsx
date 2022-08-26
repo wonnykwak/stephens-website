@@ -1,13 +1,69 @@
 import React from 'react';
 import ReactDom from "react-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function ProfilePage() {
+  AOS.init();
   return <div className="profile-page-div">
-    <div className="profile-title"> <h1> About Me</h1> </div>
-    <div className="profile-information"> <p> Information about me: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> </div>
+    <div className="profile-title-div"> <h1 className="profile-title"> About Me</h1>  <hr className="title-hr"/></div>
+    <div className="profile-information"> <p data-aos="fade-in"> Hey! My name is Stephen Kwak. I'm a 19 year old student at Pomona College currently majoring in Computer Science. Originally from Seoul, South Korea, now I am currently located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
     <div>
-      <div className="profile-demographic"> <h1> More Details </h1> <p> Age: 19 </p> </div>
-      <div className="profile-pictures-section"> <img className="profile-picture" src="images/profilepic.jpg" /> </div>
+      <div className="profile-demographic" data-aos="fade-in">
+        <h2 className="title-heading2"> More Details </h2>
+        <table className="profile-table" style={{textAlign: "left"}}>
+          <tr>
+            <td>
+              <p> Age:  </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> 19 </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Name:   </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> Stephen Yong Won Kwak </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Location:  </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> San Jose, CA </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Name:   </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> Stephen Yong Won Kwak </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Favorite Food:  </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> Maeun Galbi JJim (매운갈비찜) </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Current Show:  </p>
+            </td>
+            <td style={{paddingLeft: "10px"}}>
+              <p> One Piece </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div className="profile-pictures-section"> <img data-aos="fade-in" className="profile-picture" src="images/profilepic.jpg" /> </div>
     </div>
     </div>
 

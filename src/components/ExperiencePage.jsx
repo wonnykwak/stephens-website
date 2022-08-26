@@ -6,14 +6,16 @@ import experiences from "./experiences";
 function ExperiencePage() {
 
   return <div className="experience-page-section">
-      <h1 className="experience-title"> My Experiences </h1>
-
-      {experiences.map((cards) => {
-        return (<ExperienceCards key={cards.key} title={cards.title} date={cards.date} location={cards.location} position={cards.position} image={cards.image} description={cards.description}/> );
-      })}
-      <ExperienceCards />
+      <h1 className="experience-title title-heading"> My Experiences </h1>
+        <hr className="title-hr"/>
+        <div className="experience-cards">
+          {experiences.map((cards) => {
+            return (<ExperienceCards key={cards.key} title={cards.title} date={cards.date} location={cards.location} position={cards.position} image={cards.image} description={cards.description}/> );
+          })}
+          
+        </div>
     </div>
-    
+
 }
 
 
