@@ -18,6 +18,7 @@ ul {
   background-color: #F9F5EB;
   height: 1700px;
 }
+
 #lineBreak {
   border: 8px dotted;
   height: 2px;
@@ -40,6 +41,7 @@ ul {
 .title-heading {
   font-family: 'Arvo' , serif;
   font-size: 3em;
+  color: #1C3879;
 }
 
 .title-heading2 {
@@ -56,8 +58,8 @@ ul {
   font-size: 3rem;
   line-height: 0.5;
   text-align: center;
-
 }
+
 .front-title{
   padding-left: 10px;
   position: relative;
@@ -68,7 +70,6 @@ ul {
   line-height: 0.5;
   text-align: center;
 }
-
 
 .front-background {
   min-height: 100%;
@@ -93,6 +94,7 @@ ul {
     align-items: center;
     justify-content: center;
 }
+
 .front-page::before {
   content: "";
   background-image: url('images/frontpage.jpg');
@@ -112,13 +114,13 @@ ul {
 /* Profile Page css code */
 
 .profile-page-div {
-  padding: 100px 250px 100px 250px;
+  padding: 5% 17% 15% 17%;
   height: 900px;
 }
 
 .profile-table {
   display: table;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .profile-title-div {
@@ -179,8 +181,8 @@ ul {
 }
 
 .education-page-section {
-  padding: 100px 150px 100px 150px;
-  height: 700px;
+  padding: 5% 12% 20% 12%;
+  height: 800px;
 }
 
 .education-title {
@@ -247,7 +249,7 @@ ul {
 }
 
 .experience-page-section {
-  padding: 80px 250px 100px 250px;
+  padding: 5% 12% 100px 12%;
   height: auto;
 }
 
@@ -258,29 +260,28 @@ ul {
 .experience-card-picture {
   float: left;
   width: 100%;
-  height: auto;
+  height: 300px;
   display: flex;
   text-align: center;
-  margin-bottom: 90%;
+
 }
 
 .experience-card-info {
-  margin-bottom: 15%
 }
 
 .experience-pictures {
   width: 230px;
   border-radius: 13%;
-
+  height: 160px;
   border: 2px solid;
-
-
+  object-fit: scale-down;
+  margin-bottom: 100%;
 }
 
 /* Project Page css code */
 #Project-Page {
   background-color: #EAE3D2;
-  height: 1000px;
+  height: 1100px;
 }
 
 
@@ -296,9 +297,8 @@ ul {
   width: 390px;
   height: 230px;
   border: 3px solid;
-  border-color: #EAE3D2;
+  border-color: #607EAA;
   opacity: 1;
-
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -321,36 +321,46 @@ table#table1 {
 
 .project-slides {
   width: 100%;
-  height: 300px;
+  height: 450px;
   display: flex;
   text-align: center;
 }
 
 .carousel-pictures {
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 450px;
   object-fit: cover;
 }
 
 .project-carousel {
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 450px;
   display: block;
   margin: auto auto auto auto;
 }
 
 .middle {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 45px;
-  right: 0;
+  padding-left: 19%;
+  text-align: center;
   height: 100%;
-  width: 390px;
+  width: 385px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+  box-sizing: border-box;
+  display: inline-block;
 }
+
+.project-hover {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 
 .project-hover:hover .middle {
   opacity: 0.9;
@@ -368,6 +378,17 @@ table#table1 {
   color: black;
 }
 
+.hover-heading {
+  position: absolute;
+  right: 15%;
+}
+
+.hover-heading-cu {
+  position: absolute;
+  right: 20%;
+
+}
+
 .project-hr {
   width: 50%;
   margin-left: 25%;
@@ -378,13 +399,12 @@ table#table1 {
   opacity: 1;
 }
 
-
 .project-sub-heading {
   padding-top: 30px;
   opacity: 1;
   color: white;
+  text-align: center;
 }
-
 
 .project-sub-info{
   opacity: 1;
@@ -404,17 +424,19 @@ table#table1 {
   left: 0;
 }
 
-
-
-
 /* Baseball Page css code */
 #Baseball-Page {
-  height: 1300px;
+  padding: 5% 12% 20% 12%;
+  height: 1250px;
+}
+
+.baseball-div {
+  padding-right: 7%;
+  padding-left: 7%;
 }
 
 .baseball-heading {
   text-align: center;
-  padding-top: 100px;
 
 }
 
@@ -427,14 +449,14 @@ table#table1 {
 
 .baseball-pictures {
   width: 95%;
-  height: 900px;
-
+  height: 600px;
+  object-fit: cover;
 }
 
 .baseball-carousel {
   padding-top: 50px;
   width: 100%;
-  height: 700px;
+  height: 600px;
   display: block;
   margin: auto auto auto auto;
 }
@@ -442,10 +464,16 @@ table#table1 {
 /* Contact Me Page css code */
 #Contact-Page {
   background-color: #607EAA;
-  height: 500px;
+  height: 480px;
 }
 
 .contact-heading {
   text-align: center;
   color: white;
+  padding-top: 5%;
+}
+
+.contact-table {
+  display: table;
+  margin: 0 auto;
 }

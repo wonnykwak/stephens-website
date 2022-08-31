@@ -19,8 +19,8 @@ AOS.init();
         <a className="project-button-hover" href="ethicsresearch.html">
           <div className="project-hover">
             <img class="project-pictures" src="images/airesearchpaper.png"/>
-            <div class="middle">
-              <div>
+            <div className="middle">
+              <div className="hover-heading">
                 <h2 className="project-sub-heading"> AI Research Paper</h2>
                 <hr className="project-hr" />
               </div>
@@ -38,7 +38,7 @@ AOS.init();
             <img className="project-pictures" src="images/cuboulderimg.jpg"/>
 
           <div class="middle">
-            <div>
+            <div className="hover-heading-cu">
               <h2 className="project-sub-heading"> CU AI Research</h2>
               <hr className="project-hr" />
             </div>
@@ -56,7 +56,7 @@ AOS.init();
             <img className="project-pictures" src="images/stanfordneurodiversity.jpeg"/>
 
           <div class="middle">
-            <div>
+            <div className="hover-heading">
               <h2 className="project-sub-heading"> SNP Reach Project</h2>
               <hr className="project-hr" />
             </div>
