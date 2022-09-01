@@ -2,7 +2,6 @@ import React from "react";
 import ReactDom from "react-dom";
 import {FaBrands, FaLinkedin, FaSolid, FaAt} from "react-icons/fa";
 
-
 function ContactPage() {
   return (<div>
       <h1 className="title-heading contact-heading"> Contact Me! </h1>
@@ -33,6 +32,7 @@ function ContactPage() {
           </tr>
 
         </table>
+
 
 
       </div>

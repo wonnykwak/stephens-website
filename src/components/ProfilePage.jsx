@@ -5,8 +5,9 @@ import 'aos/dist/aos.css';
 
 
 function ProfilePage() {
+  console.log(window.location);
   AOS.init();
-  return <div className="profile-page-div">
+  return <div id="ProfilePage" className="profile-page-div">
     <div className="profile-title-div"> <h1 className="profile-title title-heading"> About Me</h1>  <hr className="title-hr"/></div>
     <div className="profile-information"> <p data-aos="fade-in"> Hey! My name is Stephen Kwak. I'm a 19 year old student at Pomona College currently majoring in Computer Science. Originally from Seoul, South Korea, I am now currently located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
     <div>

@@ -2,7 +2,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 import 'bootstrap/dist/css/bootstrap.css';
-import App from "./components/App";
+import Sidebar from "./components/Sidebar";
+import App from "./App";
 import FrontPage from "./components/FrontPage";
 import ProfilePage from "./components/ProfilePage";
 import EducationPage from "./components/EducationPage";
@@ -25,3 +26,5 @@ ReactDom.render(<ProjectPage />, document.getElementById("Project-Page"));
 ReactDom.render(<BaseballPage />, document.getElementById("Baseball-Page"));
 
 ReactDom.render(<ContactPage />, document.getElementById("Contact-Page"));
+
+ReactDom.render(<App />, document.getElementById("root"));
