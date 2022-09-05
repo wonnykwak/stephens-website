@@ -5,7 +5,7 @@ import experiences from "./experiences";
 
 function ExperiencePage() {
 
-  return <div className="experience-page-section">
+  return <div id="ExperiencePage" className="experience-page-section">
       <h1 className="experience-title title-heading"> My Experiences </h1>
         <hr className="title-hr"/>
         <div className="experience-cards">

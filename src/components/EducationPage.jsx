@@ -3,9 +3,11 @@ import ReactDom from "react-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 function EducationPage() {
   AOS.init();
-  return <div className="education-page-section">
+  return <div id="EducationPage" className="education-page-section">
+
     <h1 className="education-title title-heading"> Education </h1><hr className="title-hr"/>
 
     <div data-aos="fade-down-right"  className="education-pomona">

@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import {FaBrands, FaLinkedin, FaSolid, FaAt} from "react-icons/fa";
 
 function ContactPage() {
-  return (<div>
+  return (<div id="ContactPage" className="contact-div">
       <h1 className="title-heading contact-heading"> Contact Me! </h1>
       <hr className="title-hr"/>
       <div style={{textAlign: "center", paddingTop:"2.5%" }}>

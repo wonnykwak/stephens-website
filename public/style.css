@@ -50,6 +50,10 @@ ul {
 }
 
 /* Front page css code */
+#FrontPage {
+  position: relative;
+  z-index: -1;
+}
 
 .front-title-first {
   position: relative;
@@ -93,6 +97,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 
 .front-page::before {
@@ -112,6 +118,10 @@ ul {
 }
 
 /* Profile Page css code */
+#ProfilePage {
+  position: relative;
+  z-index: -1;
+}
 
 .profile-page-div {
   padding: 5% 17% 15% 17%;
@@ -174,6 +184,8 @@ ul {
 /* Education Page css code */
 #Education-Page{
   background-color: #F9F5EB;
+  position: relative;
+  z-index: -1;
 }
 
 .education-heading {
@@ -243,6 +255,8 @@ ul {
 
 #Experience-Page {
   background-color: white;
+  position: relative;
+  z-index: -1;
 }
 .experience-cards {
   padding-top: 50px;
@@ -281,12 +295,15 @@ ul {
 /* Project Page css code */
 #Project-Page {
   background-color: #EAE3D2;
-  height: 1100px;
+  position: relative;
+  z-index: -1;
 }
 
 
 .project-section {
   text-align: center;
+  height: 1100px;
+
 }
 
 .project-title {
@@ -317,6 +334,10 @@ table#table1 {
   width: 100%;
   margin-bottom: 75px;
   margin-top: 50px;
+}
+
+.project-table-div {
+  z-index: 1;
 }
 
 .project-slides {
@@ -424,15 +445,21 @@ table#table1 {
   left: 0;
 }
 
+.project-table-cells {
+  padding-left: 0;
+}
+
 /* Baseball Page css code */
-#Baseball-Page {
-  padding: 5% 12% 20% 12%;
-  height: 1250px;
+#BaseballPage {
+
 }
 
 .baseball-div {
-  padding-right: 7%;
-  padding-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-right: 14%;
+  padding-left: 14%;
+  height: 1300px;
 }
 
 .baseball-heading {
@@ -442,21 +469,21 @@ table#table1 {
 
 .baseball-slides {
   width: 100%;
-  height: 300px;
+  height: 600px;
   display: flex;
   text-align: center;
 }
 
 .baseball-pictures {
   width: 95%;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
 }
 
 .baseball-carousel {
   padding-top: 50px;
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: block;
   margin: auto auto auto auto;
 }
@@ -464,7 +491,12 @@ table#table1 {
 /* Contact Me Page css code */
 #Contact-Page {
   background-color: #607EAA;
-  height: 480px;
+  position: relative;
+  z-index: -1;
+}
+
+.contact-div {
+  height: 520px;
 }
 
 .contact-heading {
@@ -476,4 +508,89 @@ table#table1 {
 .contact-table {
   display: table;
   margin: 0 auto;
+}
+
+/* Navbar section */
+.navbar {
+  height: 80px;
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: sticky;
+
+}
+
+.Nav {
+  position: -webkit-sticky; /* Safari & IE */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #1C3879;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+/* 060b26 */
+.nav-text a:hover {
+  background-color: #060b26;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #1C3879;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
 }

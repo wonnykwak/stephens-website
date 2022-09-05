@@ -4,7 +4,7 @@ import BaseballCarousel from "./BaseballCarousel";
 
 function BaseballPage() {
   return (
-    <div className="baseball-div">
+    <div id="BaseballPage" className="baseball-div">
     <br />
       <h1 className="baseball-heading title-heading"> Baseball </h1><hr className="title-hr"/>
       <br />
