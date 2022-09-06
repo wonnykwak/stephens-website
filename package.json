@@ -2,7 +2,7 @@
   "name": "stephens-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wonnykwak.github.io/stephens-website/",
+  "homepage": "https://wonnykwak.github.io/stephens-website",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@testing-library/jest-dom": "^5.16.5",

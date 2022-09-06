@@ -42,7 +42,7 @@ function EducationPage() {
         </div>
       </div>
         <div className="bellarmine-info">
-          <p> Although cut short due to the Covid-19 pandemic, my time at Bellarmine College Preparatory was nothing short of amazing. As an All-Boys Jesuit High School, Bellarmine's education curriculum heavily focused on recognizing one's faith as well as providing high-level academics. During my time there I learned key values of leadership, brotherhood, and team-work through the school's prestigious academic curriculum and the Varisty baseball team. </p>
+          <p> Although cut short due to the Covid-19 pandemic, my time at Bellarmine College Preparatory was nothing short of amazing. As an All-Boys Jesuit High School, Bellarmine's education curriculum heavily focused on recognizing one's faith as well as providing high-level academics. During my time there I learned key values of leadership, brotherhood, and team-work through the school's prestigious academic curriculum and the Varsity baseball team. </p>
         </div>
     </div>
 
