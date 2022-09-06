@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wonnykwak/stephens-website/precache-manifest.c6a7775036f29c2bdc61457cc0921c12.js"
+  "/stephens-website/precache-manifest.09e3fa6f8fcc64c627cefba6f445f852.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/wonnykwak/stephens-website/index.html", {
+workbox.routing.registerNavigationRoute("/stephens-website/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
