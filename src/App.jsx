@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import React from 'react';
 import ReactDom from "react-dom";
@@ -15,9 +15,9 @@ import ContactPage from "./components/ContactPage";
 function App() {
   return (
 
-    <Router>
+    <HashRouter>
       <SideBar />
-    </Router>
+    </HashRouter>
 
 
 )

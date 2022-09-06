@@ -1,7 +1,6 @@
 //jshint esversion:6
 import React from "react";
 import ReactDom from "react-dom";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Sidebar from "./components/Sidebar";
 import App from "./App";
