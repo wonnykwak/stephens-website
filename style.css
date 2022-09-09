@@ -1,5 +1,9 @@
 body, html {
   height: 100%;
+  width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 p {
@@ -124,8 +128,9 @@ ul {
 }
 
 .profile-page-div {
-  padding: 5% 17% 15% 17%;
-  height: 900px;
+  padding: 5% 17% 10% 17%;
+  display: block;
+  overflow: auto;
 }
 
 .profile-table {
@@ -143,7 +148,7 @@ ul {
   font-size: 3em;
 }
 
-.profile-information {
+.profile-intro {
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -151,12 +156,21 @@ ul {
   text-align: center;
 }
 
+.prof-info {
+  display: inline-block;
+}
+
 .profile-demographic {
+  display: block;
+  overflow: auto;
   float: left;
   width: 50%;
-  height: 200px;
   text-align: center;
   padding-top:3%;
+}
+
+@media (max-width: 600px) {
+  .profile-demographic {float: none; width: 100%;}
 }
 
 .profile-demographic h2{
@@ -168,13 +182,18 @@ ul {
   float: right;
   width: 50%;
   height: 400px;
-  display: flex;
+  display: block;
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .profile-pictures-section {float: none; width: 100%; padding-top: 20%; padding-bottom: 20%;}
+}
+
 .profile-picture {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   display: block;
@@ -185,16 +204,18 @@ ul {
 #Education-Page{
   background-color: #F9F5EB;
   position: relative;
-  z-index: -1;
+  z-index: -3;
 }
 
 .education-heading {
-  height: 170px;
+  display: block;
+  overflow: auto;
 }
 
 .education-page-section {
   padding: 5% 12% 20% 12%;
-  height: 800px;
+  display: block;
+  overflow: auto;
 }
 
 .education-title {
@@ -205,13 +226,31 @@ ul {
   margin-top: 50px;
   float: left;
   width: 50%;
-  height: 400px;
+  display: block;
+  overflow: auto;
+  min-height: 100%;
   border-right: 1px dotted #000900;
+
+}
+@media (max-width: 1000px) {
+  .education-pomona {float: none; width: 100%; border: none; text-align: center;}
 }
 
 .pomona-heading{
   text-align: left;
+  float: left;
+  width: 60%;
+}
+@media (max-width: 1000px) {
+  .pomona-heading {float: none; width: 100%; text-align: center;}
+}
 
+.pom-icon {
+  float: right;
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  .pom-icon {float: none; width: 100%; padding-right: 5%;}
 }
 
 .pomona-logo {
@@ -229,21 +268,39 @@ ul {
   margin-top: 50px;
   float: right;
   width: 49.9%;
-  height: 400px;
+  display: block;
+  overflow: auto;
   position: relative;
   left: 20px;
 }
+@media (max-width: 1000px) {
+  .education-bellarmine {float: none; width: 100%; position: relative; left: 0; text-align: center;}
+}
+
 
 .bellarmine-heading{
   text-align: left;
   float: left;
   width: 70%;
 }
+@media (max-width: 1000px) {
+  .bellarmine-heading {float: none; width: 100%; text-align: center;}
+}
 
 .bellarmine-logo {
   width: 130px;
   position: relative;
   left: 10px;
+}
+
+.bell-icon {
+  float: right;
+   width: 30%;
+}
+@media (max-width: 1000px) {
+  .bell-icon {float: none; width: 100%; text-align: center; position: relative; right: 10px;}
+  .bellarmime-logo {position: relative; left: 0;}
+
 }
 
 .bellarmine-info {
@@ -258,27 +315,61 @@ ul {
   position: relative;
   z-index: -1;
 }
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .experience-table {display: block; padding: 0;}
+  .experience-tr {display: block; padding: 0; line-height: 2; text-align: center;}
+  .experience-td-picture {display: block; padding: 0; height: 200px;
+  }
+  .experience-td-info {display: block; padding: 0;
+  overflow: auto;}
+  .experience-pictures {width: 80%; height: auto; margin-bottom: 0;}
+}
+
+
+
+.experience-table {
+  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  display: block;
+  overflow: auto;
+}
+
+.experience-tr {
+  padding-bottom: 100px;
+}
+.experience-td-picture {
+  padding: 30px;
+}
+.experience-td-info{
+  position: relative;
+}
+
 .experience-cards {
-  padding-top: 50px;
+  padding-top: 5%;
 }
 
 .experience-page-section {
-  padding: 5% 12% 100px 12%;
-  height: auto;
+  padding: 5% 12%  10% 12%;
+  display: block;
+  overflow: auto;
 }
 
 .experience-title {
   text-align: center;
 }
-
+/*
 .experience-card-picture {
   float: left;
   width: 100%;
-  height: 300px;
+  height: 3000px;
   display: flex;
   text-align: center;
 
-}
+}*/
 
 .experience-card-info {
 }
@@ -299,10 +390,22 @@ ul {
   z-index: -1;
 }
 
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  #table1 { display: block;}
+  .project-table {display: block;}
+  .project-table-cells {display: block;}
+  .project-slides {width: 100%; height: 50%; margin-bottom: 10%;}
+  .carousel-pictures {width: 100%; height: 40%; object-fit: scale-down; text-align: center;}
+
+}
 
 .project-section {
   text-align: center;
-  height: 1100px;
+  display: block;
+  overflow: auto;
+  padding-bottom: 10%;
 
 }
 
@@ -354,7 +457,7 @@ table#table1 {
 }
 
 .project-carousel {
-  width: 700px;
+  width: 60%;
   height: 450px;
   display: block;
   margin: auto auto auto auto;
@@ -454,12 +557,19 @@ table#table1 {
 
 }
 
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .baseball-slides {padding-bottom: 10%; width: 100%;}
+}
+
 .baseball-div {
   padding-top: 5%;
   padding-bottom: 10%;
   padding-right: 14%;
   padding-left: 14%;
-  height: 1300px;
+  display: block;
+  overflow: auto;
 }
 
 .baseball-heading {
@@ -469,13 +579,12 @@ table#table1 {
 
 .baseball-slides {
   width: 100%;
-  height: 600px;
-  display: flex;
-  text-align: center;
+  height: auto;
+
 }
 
 .baseball-pictures {
-  width: 95%;
+  width: 99%;
   height: 700px;
   object-fit: cover;
 }
@@ -486,6 +595,8 @@ table#table1 {
   height: 700px;
   display: block;
   margin: auto auto auto auto;
+  position: relative;
+  z-index: -1;
 }
 
 /* Contact Me Page css code */
