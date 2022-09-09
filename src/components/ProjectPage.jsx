@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CarouselFadeExample from "./ProjectCarousel";
+import ProjectCarousel from "./ProjectCarousel";
 
 
 function ProjectPage() {
@@ -69,7 +69,7 @@ AOS.init();
       </table>
 
 
-    <CarouselFadeExample />
+    <ProjectCarousel />
     </div>
 )
 }

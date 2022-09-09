@@ -6,27 +6,27 @@ import 'aos/dist/aos.css';
 function ExperienceCards(props) {
   AOS.init();
 
-  return (<div data-aos="fade-down">
-    <table style={{ borderCollapse: "collapse", borderCollapse:"separate"
-                , borderSpacing: "0 20px"}}>
-        <tr style={{paddingBottom: "1000px"}}>
-          <td style={{padding: "30px"}}>
+  return (
+    <div data-aos="fade-down">
 
-              <img className="experience-pictures" src={props.image} />
+      <table className="experience-table">
+          <tr className="experience-tr">
+            <td className="experience-td-picture">
+                <img className="experience-pictures" src={props.image} />
+            </td>
+            <td className="experience-td-info">
+              <div  className="experience-card-info">
+                <h2 className="title-heading2"> {props.title} </h2>
+                <p> <em> {props.date} </em>  <br /> <em> {props.location} </em> <br /> <em> {props.position} </em> </p>
+                <br />
+                <p> {props.description}</p>
+              </div>
+            </td>
+          </tr>
+      </table>
 
-          </td>
-          <td style={{position: "relative" }}>
-            <div  className="experience-card-info">
-              <h2 className="title-heading2"> {props.title} </h2>
-              <p> <em> {props.date} </em>  <br /> <em> {props.location} </em> <br /> <em> {props.position} </em> </p>
-              <br />
-              <p> {props.description}</p>
-            </div>
-          </td>
-      </tr>
-    </table>
-
-  </div>);
+    </div>
+);
 
 }
 

@@ -12,7 +12,7 @@ function FrontPage() {
 
     <div className="front-page">
     <div> <h3 className="front-title-first"> Hi, I'm  </h3> <br />
-    <h1 className="front-title"> Stephen Kwak</h1> </div>
+    <h1 style={{lineHeight: "1"}} className="front-title"> Stephen Kwak</h1> </div>
 
 
   </div>

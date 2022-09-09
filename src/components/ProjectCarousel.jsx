@@ -57,7 +57,7 @@ function CarouselFadeExample() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <iframe width="700" height="450" src="https://www.youtube.com/embed/cxpISkR84xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/cxpISkR84xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <Carousel.Caption style={{color: "#1C3879", webkitTextStroke:"0.7px white"}}>
           <h3>Hwarang Introduction</h3>
 
