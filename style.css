@@ -168,7 +168,7 @@ ul {
 }
 
 @media (max-width: 600px) {
-  .profile-demographic {float: none; width: 100%;}
+  .profile-demographic {float: none; width: 100%; opacity: 1; transform: none;}
 }
 
 .profile-demographic h2{
@@ -185,7 +185,7 @@ ul {
 }
 
 @media (max-width: 600px) {
-  .profile-pictures-section {float: none; width: 100%; padding-top: 20%; padding-bottom: 20%;}
+  .profile-pictures-section {float: none; width: 100%; padding-top: 20%; padding-bottom: 20%; opacity: 1; transform: none;}
 }
 
 .profile-picture {
