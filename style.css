@@ -130,7 +130,6 @@ ul {
 .profile-page-div {
   padding: 5% 17% 10% 17%;
   display: block;
-  overflow: auto;
 }
 
 .profile-table {
@@ -162,7 +161,6 @@ ul {
 
 .profile-demographic {
   display: block;
-  overflow: auto;
   float: left;
   width: 50%;
   text-align: center;
