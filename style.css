@@ -130,7 +130,7 @@ ul {
 .profile-page-div {
   padding: 5% 17% 10% 17%;
   display: block;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .profile-table {
