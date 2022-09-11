@@ -154,7 +154,7 @@ ul {
   padding-bottom: 50px;
   line-height: 2;
   text-align: center;
-  opacity: 1 !important;
+
 }
 
 .prof-info {
@@ -167,7 +167,7 @@ ul {
   width: 50%;
   text-align: center;
   padding-top:3%;
-  opacity: 1 !important;
+
 }
 
 @media (max-width: 600px) {
