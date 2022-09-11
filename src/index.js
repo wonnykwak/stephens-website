@@ -11,7 +11,7 @@ import ExperiencePage from "./components/ExperiencePage";
 import ProjectPage from "./components/ProjectPage";
 import BaseballPage from "./components/BaseballPage";
 import ContactPage from "./components/ContactPage";
-
+import $ from "jquery";
 
 ReactDom.render(<FrontPage /> , document.getElementById("Front-Page"));
 

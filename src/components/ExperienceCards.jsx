@@ -7,7 +7,7 @@ function ExperienceCards(props) {
   AOS.init();
 
   return (
-    <div data-aos="fade-down">
+    <div>
 
       <table className="experience-table">
           <tr className="experience-tr">

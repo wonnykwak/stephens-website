@@ -9,8 +9,7 @@ function EducationPage() {
   return <div id="EducationPage" className="education-page-section">
 
     <h1 className="education-title title-heading"> Education </h1><hr className="title-hr"/>
-
-    <div data-aos="fade-down-right"  className="education-pomona">
+    <div className="education-pomona">
         <div className="education-heading">
           <div className="pom-icon">
             <img className="pomona-logo" src= "images/pomonacollegelogo.jpg"/>
@@ -31,7 +30,7 @@ function EducationPage() {
           </p>
         </div>
     </div>
-    <div data-aos="fade-down-left" className="education-bellarmine">
+    <div className="education-bellarmine">
       <div className="education-heading">
         <div className="bell-icon">
           <img className="bellarmine-logo" src= "images/BCP-Crest.png"/>

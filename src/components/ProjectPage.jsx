@@ -15,7 +15,7 @@ AOS.init();
 
       <table id="table1">
         <tr className="project-table">
-          <td data-aos="fade-in" className="project-table-cells">
+          <td className="project-table-cells">
             <a className="project-button-hover" href="ethicsresearch.html">
               <div className="project-hover">
                 <img class="project-pictures" src="images/airesearchpaper.png"/>
@@ -31,7 +31,7 @@ AOS.init();
               </div>
             </a>
           </td>
-          <td data-aos="fade-in" className="project-table-cells">
+          <td className="project-table-cells">
             <a className="project-button-hover" href="curesearch.html">
               <div className="project-hover">
                 <img className="project-pictures" src="images/cuboulderimg.jpg"/>
@@ -47,7 +47,7 @@ AOS.init();
               </div>
             </a>
           </td>
-          <td data-aos="fade-in" className="project-table-cells">
+          <td className="project-table-cells">
           <a className="project-button-hover" href="snpresearch.html">
             <div className="project-hover">
 
