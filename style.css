@@ -387,7 +387,7 @@ only screen and (max-width: 760px),
 #Project-Page {
   background-color: #EAE3D2;
   position: relative;
-  z-index: -3;
+
 }
 
 @media
@@ -550,7 +550,7 @@ table#table1 {
 
 .project-table-cells {
   padding-left: 0;
-  z-index: -1;
+  
 }
 
 /* Baseball Page css code */
