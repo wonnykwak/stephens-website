@@ -604,7 +604,6 @@ only screen and (max-width: 760px),
 #Contact-Page {
   background-color: #607EAA;
   position: relative;
-  z-index: -1;
 }
 
 .contact-div {
