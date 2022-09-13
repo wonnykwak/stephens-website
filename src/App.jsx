@@ -19,6 +19,20 @@ function App() {
       <SideBar />
     </HashRouter>
 
+    // ReactDom.render(<FrontPage /> , document.getElementById("Front-Page"));
+    //
+    // ReactDom.render(<ProfilePage />, document.getElementById("Profile-Page"));
+    //
+    // ReactDom.render(<EducationPage />, document.getElementById("Education-Page"));
+    //
+    // ReactDom.render(<ExperiencePage />, document.getElementById("Experience-Page"));
+    //
+    // ReactDom.render(<ProjectPage />, document.getElementById("Project-Page"));
+    //
+    // ReactDom.render(<BaseballPage />, document.getElementById("Baseball-Page"));
+    //
+    // ReactDom.render(<ContactPage />, document.getElementById("Contact-Page"));
+
 
 )
 

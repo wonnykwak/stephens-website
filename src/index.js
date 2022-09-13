@@ -13,16 +13,22 @@ import BaseballPage from "./components/BaseballPage";
 import ContactPage from "./components/ContactPage";
 import $ from "jquery";
 
-ReactDom.render(<FrontPage /> , document.getElementById("Front-Page"));
-
-ReactDom.render(<ProfilePage />, document.getElementById("Profile-Page"));
-
-ReactDom.render(<EducationPage />, document.getElementById("Education-Page"));
-
-ReactDom.render(<ExperiencePage />, document.getElementById("Experience-Page"));
-
-ReactDom.render(<ProjectPage />, document.getElementById("Project-Page"));
-
-ReactDom.render(<BaseballPage />, document.getElementById("Baseball-Page"));
-
-ReactDom.render(<ContactPage />, document.getElementById("Contact-Page"));
+<React.StrictMode>
+//
+// ReactDom.render(<FrontPage /> , document.getElementById("Front-Page"));
+//
+// ReactDom.render(<ProfilePage />, document.getElementById("Profile-Page"));
+//
+// ReactDom.render(<EducationPage />, document.getElementById("Education-Page"));
+//
+// ReactDom.render(<ExperiencePage />, document.getElementById("Experience-Page"));
+//
+// ReactDom.render(<ProjectPage />, document.getElementById("Project-Page"));
+//
+// ReactDom.render(<BaseballPage />, document.getElementById("Baseball-Page"));
+//
+// ReactDom.render(<ContactPage />, document.getElementById("Contact-Page"));
+<form action="/" class = "form-signin" method="post">
+ReactDom.render(<h1> Hello </h1>, document.getElementById("root"));
+</form>
+</React.StrictMode>
