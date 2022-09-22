@@ -16,9 +16,9 @@ AOS.init();
       <table id="table1">
         <tr className="project-table">
           <td className="project-table-cells">
-            <a className="project-button-hover" href="ethicsresearch.html">
+            <a className="project-button-hover" href="/stephens-website/ethicsresearch.html">
               <div className="project-hover">
-                <img class="project-pictures" src="images/airesearchpaper.png"/>
+                <img class="project-pictures" src="images/airesearchpaper.png" onClick="window.open(https://wonnykwak.github.io/stephens-website/ethicsresearch.html)"/>
                 <div className="middle">
                   <div className="hover-heading">
                     <h2 className="project-sub-heading"> AI Research Paper</h2>
@@ -32,9 +32,9 @@ AOS.init();
             </a>
           </td>
           <td className="project-table-cells">
-            <a className="project-button-hover" href="curesearch.html">
+            <a className="project-button-hover" href="/stephens-website/curesearch.html">
               <div className="project-hover">
-                <img className="project-pictures" src="images/cuboulderimg.jpg"/>
+                <img className="project-pictures" src="images/cuboulderimg.jpg" onClick="window.open(https://wonnykwak.github.io/stephens-website/curesearch.html)"/>
                 <div class="middle">
                   <div className="hover-heading-cu">
                     <h2 className="project-sub-heading"> CU AI Research</h2>
@@ -48,10 +48,10 @@ AOS.init();
             </a>
           </td>
           <td className="project-table-cells">
-          <a className="project-button-hover" href="snpresearch.html">
+          <a className="project-button-hover" href="/stephens-website/snpresearch.html">
             <div className="project-hover">
 
-                <img className="project-pictures" src="images/stanfordneurodiversity.jpeg"/>
+                <img className="project-pictures" src="images/stanfordneurodiversity.jpeg" onClick="window.open(https://wonnykwak.github.io/stephens-website/snpresearch.html)"/>
 
               <div class="middle">
                 <div className="hover-heading">

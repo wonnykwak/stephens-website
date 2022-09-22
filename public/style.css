@@ -213,7 +213,7 @@ ul {
 }
 
 .education-page-section {
-  padding: 5% 12% 20% 12%;
+  padding: 5% 12% 10% 12%;
   display: block;
   overflow: auto;
 }
@@ -349,7 +349,7 @@ only screen and (max-width: 760px),
 }
 
 .experience-cards {
-  padding-top: 5%;
+  padding-top: 0%;
 }
 
 .experience-page-section {
@@ -387,7 +387,7 @@ only screen and (max-width: 760px),
 #Project-Page {
   background-color: #EAE3D2;
   position: relative;
-  z-index: -1;
+
 }
 
 @media
@@ -398,7 +398,7 @@ only screen and (max-width: 760px),
   .project-table-cells {display: block;}
   .project-slides {width: 100%; height: 50%; margin-bottom: 10%;}
   .carousel-pictures {width: 100%; height: 40%; object-fit: scale-down; text-align: center;}
-
+  .project-pictures {width: 390px;}
 }
 
 .project-section {
@@ -430,6 +430,7 @@ only screen and (max-width: 760px),
 .project-table {
   margin-left: 0;
   margin-right: 0;
+  position: relative;
 
 }
 
@@ -437,11 +438,10 @@ table#table1 {
   width: 100%;
   margin-bottom: 75px;
   margin-top: 50px;
+  position: relative;
+
 }
 
-.project-table-div {
-  z-index: 1;
-}
 
 .project-slides {
   width: 100%;
@@ -550,6 +550,7 @@ table#table1 {
 
 .project-table-cells {
   padding-left: 0;
+
 }
 
 /* Baseball Page css code */
@@ -603,7 +604,6 @@ only screen and (max-width: 760px),
 #Contact-Page {
   background-color: #607EAA;
   position: relative;
-  z-index: -1;
 }
 
 .contact-div {

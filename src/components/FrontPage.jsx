@@ -6,7 +6,7 @@ function FrontPage() {
 
   return <div>
 
-  <div style={{position:"fixed"}}>
+  <div style={{position:"fixed", display: "flex", zIndex:"999"}}>
     <App />
   </div>
 
