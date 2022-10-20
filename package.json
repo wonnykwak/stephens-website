@@ -2,7 +2,6 @@
   "name": "stephens-website",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4747",
   "homepage": "https://wonnykwak.github.io/stephens-website",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.0",

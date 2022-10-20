@@ -30,6 +30,13 @@ function ContactPage() {
               <a href= "https://linkedin.com/in/stephen-kwak" style={{color: "black", fontSize: "1rem"}}> linkedin.com/in/stephen-kwak </a>
             </td>
           </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+              <a href= "/stephens-website/resume.html" style={{color: "black", fontSize: "1rem", textAlign:"center"}}> Link to resume </a>
+            </td>
+          </tr>
 
         </table>
 
