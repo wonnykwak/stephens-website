@@ -124,8 +124,16 @@ ul {
 /* Profile Page css code */
 #ProfilePage {
   position: relative;
-  z-index: -1;
+
 }
+
+.resume-button a {
+
+}
+.resume-button a:hover{
+  color: black;
+}
+
 
 .profile-page-div {
   padding: 5% 17% 10% 17%;
@@ -707,7 +715,30 @@ span {
 }
 
 /* Resume section */
+.resume-div {
+  position: relative;
+  left: 50px;
+  top: 500px;
+}
+
 .resume-page {
   width: 100%;
   height: 100%;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.cs181padding {
+  background-color: black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cs181frame {
+  display:block;
+  margin:auto;
 }
