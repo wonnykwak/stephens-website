@@ -20,7 +20,7 @@ function EducationPage() {
 
           </div>
           <div>
-            <p> Relevant Courses: <em> Data Structures & Adv. Programming, Discrete Math & Func. Programming, Intro to Languages & Theory, Usable Security & Privacy</em></p>
+            <p> Relevant Courses: <em> Computer Systems, Calc III, Intro to Languages and Theory, Usable Security and Privacy, Data Structures & Adv. Programming, Discrete Math & Func. Programming, Intro to Languages & Theory, Usable Security & Privacy</em></p>
           </div>
 
         </div>

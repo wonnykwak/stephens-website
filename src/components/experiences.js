@@ -11,6 +11,16 @@ const experiences = [
   },
   {
     key: 2,
+    image: "images/qsc.png",
+    title: "Quantitative Skills Center Partner",
+    date: "January 2023 - Present",
+    location: "Claremont, CA",
+    position: "Computer Science Teaching Partner",
+    description: " Currently teaching and advising students as a partner for the Quantitative Skills Center at Pomona College. Working around 4-6 hours a week as the QSC, I am assisting students in the computer science department with their in-class projects and help studying for their assessments. Not only did this experience provide me with the opportunity to deepen my own understanding of computer science concepts, but it also allowed me to help others in their studies and see their progress and success. I found great satisfaction in being able to assist students in overcoming challenging coursework and seeing their grades improve. Furthermore, tutoring helped me to develop my communication and teaching skills, which will be valuable assets in my future endeavors. Overall, being a tutor was a positive and enriching experience, both personally and professionally. ",
+    link: "Experience-Page"
+  },
+  {
+    key: 3,
     image: "images/tomresearch.png",
     title: "Independent Research: Ethical Issues with Autonomous Vehicles",
     date: "June 2020 - November 2020",
@@ -20,7 +30,7 @@ const experiences = [
     link: "Experience-Page"
   },
   {
-    key: 3,
+    key: 4,
     image: "images/cairolab.png",
     title: "University of Colorado Boulder: Summer AI Research Program",
     date: "June 2020 - November 2020",
@@ -30,7 +40,7 @@ const experiences = [
   , link: "Experience-Page"
   },
   {
-    key: 4,
+    key: 5,
     image: "images/stanfordneurodiversity.jpeg",
     title: "Stanford Medicine: SNP Reach",
     date: "June 2020 - July 2020",
@@ -40,7 +50,7 @@ const experiences = [
     , link: "Experience-Page"
   },
   {
-    key: 5,
+    key: 6,
     image: "images/hwaranglogo.png",
     title: "Hwarang Youth Foundation",
     date: "June 2018 - May 2021",
@@ -49,7 +59,7 @@ const experiences = [
     description:"After starting Hwarang Youth Foundation's first district in Silicon Valley, it has been my joy to take part in the growth of the organization in my community. I was initially inspired by Hwarang's mission to build tomorrow’s leaders through acts of service and its devotion to serving the community. I first started as the Saratoga Chapter president, slowly growing my chapter one volunteer activity at a time such as the Blankets for Needy project -- where we fundraised through a garage sale to provide blankets for the nearby homeless shelter, City Team. When the Covid-19 pandemic hit, we still carried out our goal through the 'Give Sanitizer, Prevent Covid-19' project in which we made hand sanitizer to donate. Organizing initiatives for Hwarang, I’m often humbled by the need for a collaborative approach to both planning and execution. Placed in the leadership role of the Silicon Valley District Chairperson, I realized that being a leader doesn’t always mean being right or having all the answers; being a leader is inspiring and empowering others to come together, sharing insight while striving towards a common end."
   },
   {
-    key: 6,
+    key: 7,
     image: "images/naofa.png",
     title: "National Academy of Athletics",
     date: "June 2022 - July 2022",

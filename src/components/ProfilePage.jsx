@@ -4,16 +4,18 @@ import App from "../App";
 import $ from "jquery";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import {BsDownload} from "react-icons/bs";
 
 function ProfilePage() {
   $(function() {
             AOS.init();
        });
+
+
   return <div id="ProfilePage" className="profile-page-div">
 
     <div className="profile-title-div"> <h1 className="profile-title title-heading"> About Me</h1>  <hr className="title-hr"/></div>
-    <div className="profile-intro"> <p > Hey! My name is Stephen Kwak. I'm a 19-year-old student at Pomona College currently majoring in Computer Science. Originally from Seoul, South Korea, I am now located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
+    <div className="profile-intro"> <p > Hey! My name is Stephen Kwak. I'm a 20-year-old student at Pomona College currently majoring in Computer Science. Originally from Seoul, South Korea, I am now located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
     <div className="prof-info">
       <div className="profile-demographic" >
         <h2 className="title-heading2"> More Details </h2>
@@ -23,7 +25,7 @@ function ProfilePage() {
               <p> Age:  </p>
             </td>
             <td style={{paddingLeft: "10px"}}>
-              <p> 19 </p>
+              <p> 20 </p>
             </td>
           </tr>
           <tr>
@@ -64,6 +66,28 @@ function ProfilePage() {
             </td>
             <td style={{paddingLeft: "10px"}}>
               <p> One Piece </p>
+            </td>
+
+          </tr>
+          <tr>
+
+          </tr>
+          <tr>
+            <td>
+
+                <h3> <b> Resume </b> </h3>
+
+            </td>
+
+            <td style={{textAlign: "left", paddingLeft:"10px"}}>
+            <div className="resume-button">
+
+              <a href="/stephens-website/resume.html">
+
+                  <BsDownload style={{fontSize: "2rem"}}></BsDownload>
+
+              </a>
+            </div>
             </td>
           </tr>
         </table>

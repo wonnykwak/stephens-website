@@ -21,12 +21,7 @@ return (
       />
     </Carousel.Item>
 
-    <Carousel.Item>
-      <img className="baseball-pictures"
-        src="images/bellbaseball.png"
-        alt="Third slide"
-      />
-    </Carousel.Item>
+    
   </Carousel>
   </div>
   </div>

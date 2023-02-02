@@ -16,16 +16,16 @@ AOS.init();
       <table id="table1">
         <tr className="project-table">
           <td className="project-table-cells">
-            <a className="project-button-hover" href="/stephens-website/ethicsresearch.html">
+            <a className="project-button-hover" href="/stephens-website/cs181research.html">
               <div className="project-hover">
-                <img class="project-pictures" src="images/airesearchpaper.png" onClick="window.open(https://wonnykwak.github.io/stephens-website/ethicsresearch.html)"/>
+                <img class="project-pictures" src="images/cs181img.png" onClick="window.open(https://wonnykwak.github.io/stephens-website/ethicsresearch.html)"/>
                 <div className="middle">
                   <div className="hover-heading">
-                    <h2 className="project-sub-heading"> AI Research Paper</h2>
+                    <h2 className="project-sub-heading"> Pwd Manager Study</h2>
                     <hr className="project-hr" />
                   </div>
                   <div class="project-text">
-                    <p className="project-sub-info"> Ethical Dilemmas in AI Vehicles : Literature Review + Survery Results</p>
+                    <p className="project-sub-info"> The Effects of Password Manager Interface Variations on Usability  </p>
                   </div>
                 </div>
               </div>
@@ -47,6 +47,24 @@ AOS.init();
               </div>
             </a>
           </td>
+        </tr>
+        <tr>
+        <td className="project-table-cells">
+          <a className="project-button-hover" href="/stephens-website/ethicsresearch.html">
+            <div className="project-hover">
+              <img class="project-pictures" src="images/airesearchpaper.png" onClick="window.open(https://wonnykwak.github.io/stephens-website/ethicsresearch.html)"/>
+              <div className="middle">
+                <div className="hover-heading">
+                  <h2 className="project-sub-heading"> AI Research Paper</h2>
+                  <hr className="project-hr" />
+                </div>
+                <div class="project-text">
+                  <p className="project-sub-info"> Ethical Dilemmas in AI Vehicles : Literature Review + Survery Results</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </td>
           <td className="project-table-cells">
           <a className="project-button-hover" href="/stephens-website/snpresearch.html">
             <div className="project-hover">
@@ -67,8 +85,6 @@ AOS.init();
           </td>
         </tr>
       </table>
-
-
     <ProjectCarousel />
     </div>
 )
