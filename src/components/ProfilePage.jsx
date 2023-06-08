@@ -82,7 +82,7 @@ function ProfilePage() {
             <td style={{textAlign: "left", paddingLeft:"10px"}}>
             <div className="resume-button">
 
-              <a href="/stephens-website/resume.html">
+              <a href="https://drive.google.com/file/d/1yfOwma_-6DnHwK7gOfj_j_BizMRJ1qKP/view?usp=share_link">
 
                   <BsDownload style={{fontSize: "2rem"}}></BsDownload>
 

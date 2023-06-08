@@ -1,6 +1,26 @@
 const experiences = [
   {
     key: 1,
+    image: "images/flow.jpeg",
+    title: "FlowAI - SWE Intern",
+    date: "May 2023 - Present",
+    location: "Austin, TX",
+    position: "Full Stack Lead Engineer",
+    description: " As the leader of a dynamic full-stack team comprised of over 20 talented members, my role involves spearheading the development of Flow, an exceptional AI platform designed to amplify the productivity of sales representatives by an astounding 200%. In this capacity, I am responsible for overseeing the creation of server-side operations, utilizing Django to establish seamless API connections and configure the database with PostgreSQL. Additionally, I actively contribute to the front-end development, employing React.js, React MUI, and JavaScript to craft an engaging user interface. To ensure efficient project development, code reviews, and effective team meeting coordination, I leverage the power of Atlassian DevOps, CI/CD pipelines, and JIRA, enabling streamlined processes that enhance collaboration and productivity within our team.",
+    link: "Experience-Page"
+  },
+  {
+    key: 2,
+    image: "images/aracala.jpeg",
+    title: "ARCALA Lab Research Assistant",
+    date: "May 2023 - Present",
+    location: "Irvine, CA",
+    position: "Research Assistant",
+    description: "In my role as a Research Assistant at ARCALA, I have been actively involved in conducting cutting-edge research and implementing advanced techniques to optimize the execution of machine learning algorithms within a heterogeneous hardware environment. As part of my responsibilities, I am currently engaged in researching and developing strategies to improve the performance of machine learning tasks by leveraging diverse hardware accelerators. Specifically, I am focused on designing innovative approaches for load-balancing and pipelining machine learning tasks, utilizing the power of PyTorch, a popular deep learning framework. Through my work, I aim to enhance the efficiency and effectiveness of machine learning execution, contributing to the advancement of this exciting field of research.",
+    link: "Experience-Page"
+  },
+  {
+    key: 3,
     image: "images/pomonacs.png",
     title: "Computer Science Teaching Assistant",
     date: "August 2022 - Present",
@@ -10,7 +30,7 @@ const experiences = [
     link: "Experience-Page"
   },
   {
-    key: 2,
+    key: 4,
     image: "images/qsc.png",
     title: "Quantitative Skills Center Partner",
     date: "January 2023 - Present",
@@ -20,7 +40,7 @@ const experiences = [
     link: "Experience-Page"
   },
   {
-    key: 3,
+    key: 5,
     image: "images/tomresearch.png",
     title: "Independent Research: Ethical Issues with Autonomous Vehicles",
     date: "June 2020 - November 2020",
@@ -30,7 +50,7 @@ const experiences = [
     link: "Experience-Page"
   },
   {
-    key: 4,
+    key: 6,
     image: "images/cairolab.png",
     title: "University of Colorado Boulder: Summer AI Research Program",
     date: "June 2020 - November 2020",
@@ -40,7 +60,7 @@ const experiences = [
   , link: "Experience-Page"
   },
   {
-    key: 5,
+    key: 7,
     image: "images/stanfordneurodiversity.jpeg",
     title: "Stanford Medicine: SNP Reach",
     date: "June 2020 - July 2020",
@@ -50,7 +70,7 @@ const experiences = [
     , link: "Experience-Page"
   },
   {
-    key: 6,
+    key: 8,
     image: "images/hwaranglogo.png",
     title: "Hwarang Youth Foundation",
     date: "June 2018 - May 2021",
@@ -59,7 +79,7 @@ const experiences = [
     description:"After starting Hwarang Youth Foundation's first district in Silicon Valley, it has been my joy to take part in the growth of the organization in my community. I was initially inspired by Hwarang's mission to build tomorrow’s leaders through acts of service and its devotion to serving the community. I first started as the Saratoga Chapter president, slowly growing my chapter one volunteer activity at a time such as the Blankets for Needy project -- where we fundraised through a garage sale to provide blankets for the nearby homeless shelter, City Team. When the Covid-19 pandemic hit, we still carried out our goal through the 'Give Sanitizer, Prevent Covid-19' project in which we made hand sanitizer to donate. Organizing initiatives for Hwarang, I’m often humbled by the need for a collaborative approach to both planning and execution. Placed in the leadership role of the Silicon Valley District Chairperson, I realized that being a leader doesn’t always mean being right or having all the answers; being a leader is inspiring and empowering others to come together, sharing insight while striving towards a common end."
   },
   {
-    key: 7,
+    key: 9,
     image: "images/naofa.png",
     title: "National Academy of Athletics",
     date: "June 2022 - July 2022",
