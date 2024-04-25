@@ -140,10 +140,12 @@ ul {
   display: block;
 }
 
-.profile-table {
-  display: table;
-  margin: 0 auto;
+.profile-demographic .profile-table {
+  margin-left: 0;
+  margin-right: auto;
 }
+
+
 
 .profile-title-div {
   text-align: center;
@@ -165,50 +167,92 @@ ul {
 }
 
 .prof-info {
-  display: inline-block;
+ 
+  display: flex;
+  justify-content: space-between; /* This will place space evenly between the items. */
+  align-items: start; /* This aligns items to the start of the flex container. */
+  flex-wrap: wrap;
 }
-
+/* 
 .profile-demographic {
   display: block;
   float: left;
-  width: 50%;
+  width: 40vw;
   text-align: center;
   padding-top:3%;
 
-}
-
+} */
+/* 
 @media (max-width: 600px) {
   .profile-demographic {float: none; width: 100%; opacity: 1; transform: none;}
-}
+} */
 
 .profile-demographic h2{
   padding-bottom: 20px;
 }
 
 
+.profile-demographic, .profile-pictures-section {
+  flex: 1; /* This allows the children to grow and take up equal space. */
+  /* You can also give them a min-width to ensure they don't get too small on narrow screens. */
+  min-width: 300px; /* Example min-width */
+}
+
+
+/* 
 .profile-pictures-section {
   float: right;
   width: 50%;
-  height: 400px;
+  height: 53vh;
   display: block;
   text-align: center;
-}
-
+} */
+/* 
 @media (max-width: 600px) {
   .profile-pictures-section {float: none; width: 100%; padding-top: 20%; padding-bottom: 20%; opacity: 1; transform: none;}
-}
+} */
 
 .profile-picture {
-  width: 100%;
+  width: 22vw;
   max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 45vh;
+  
   border-radius: 50%;
   display: block;
   margin: auto auto auto auto;
 }
+@media (max-width: 1000px) {
+  .prof-info {
+    flex-direction: column; /* Stack flex children vertically */
+  }
+
+  .profile-demographic, .profile-pictures-section {
+    /* Ensure both take full width and reset any specific height to auto */
+    width: 100%;
+    height: auto; /* Adjust height to auto to accommodate content */
+    min-width: 0; /* Override min-width for small screens */
+    padding-top: 20px; /* Add some padding on top for spacing */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+  }
+
+  .profile-picture {
+    width: 50vw; /* Adjust picture size to be responsive */
+    height: auto; /* Keep the aspect ratio of the image */
+    max-width: 300px; /* Prevent the image from becoming too large */
+    margin: 20px auto; /* Adjust margin for center alignment and spacing */
+  }
+  .profile-title{
+    font-size:xx-large;
+  }
+  .profile-demographic h2, .profile-intro, .profile-demographic p {
+    font-size: smaller; /* Adjust font size for smaller screens */
+    
+  }
+}
+
 
 /* Education Page css code */
+
 #Education-Page{
   background-color: #F9F5EB;
   position: relative;
@@ -221,7 +265,7 @@ ul {
 }
 
 .education-page-section {
-  padding: 5% 12% 10% 12%;
+  padding: 5% 12% 5% 12%;
   display: block;
   overflow: auto;
 }
@@ -236,33 +280,35 @@ ul {
   width: 50%;
   display: block;
   overflow: auto;
-  min-height: 100%;
+  
   border-right: 1px dotted #000900;
-
+  min-height: 25vh;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .education-pomona {float: none; width: 100%; border: none; text-align: center;}
-}
+} */
+
 
 .pomona-heading{
   text-align: left;
   float: left;
   width: 60%;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .pomona-heading {float: none; width: 100%; text-align: center;}
-}
+} */
 
 .pom-icon {
   float: right;
   width: 40%;
+  min-height: 10vh;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .pom-icon {float: none; width: 100%; padding-right: 5%;}
-}
+} */
 
 .pomona-logo {
-  width: 200px;
+  width: 13vw;
   border-radius: 10%;
 }
 
@@ -279,24 +325,29 @@ ul {
   display: block;
   overflow: auto;
   position: relative;
+  min-height: 20vh;
   left: 20px;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .education-bellarmine {float: none; width: 100%; position: relative; left: 0; text-align: center;}
-}
+} */
 
+.education-classes{
+  min-height:22vh;
+}
 
 .bellarmine-heading{
   text-align: left;
   float: left;
   width: 70%;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .bellarmine-heading {float: none; width: 100%; text-align: center;}
-}
+} */
 
 .bellarmine-logo {
-  width: 130px;
+  border-radius: 10%;
+  width: 8vw;
   position: relative;
   left: 10px;
 }
@@ -304,17 +355,69 @@ ul {
 .bell-icon {
   float: right;
    width: 30%;
+  min-height: 10vh;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .bell-icon {float: none; width: 100%; text-align: center; position: relative; right: 10px;}
   .bellarmime-logo {position: relative; left: 0;}
 
+} */
+@media (max-width: 1000px) {
+  .education-title{
+    font-size: xx-large;
+  }
+  .education-pomona{
+    float: none;
+    width: 100%;
+    border: none;
+    text-align: center;
+    height: auto; /* Adjusted for responsive height */
+  }
+  .education-bellarmine{
+    float: none;
+    width: 100%;
+    border: none;
+    text-align: center;
+    height: auto;
+    left: 0px;
+  }
+
+  .pomona-heading, .bellarmine-heading {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pom-icon, .bell-icon {
+    float: none;
+    width: 100%;
+    padding-right: 0; /* Adjusted padding for icons */
+    left: 0px;
+  }
+
+  .pomona-logo, .bellarmine-logo {
+    width: 50vw; /* Adjust logo size */
+    max-width: 120px; /* Ensures logos don't become too large */
+    border-radius: 10%;
+  }
+
+  .pomona-info, .bellarmine-info {
+    font-size: 0.9rem; /* Smaller font size for readability on smaller devices */
+  }
+
+  .bell-icon {
+    text-align: center;
+    position: relative;
+    right: 0; /* Adjust positioning for smaller screens */
+  }
 }
+
 
 .bellarmine-info {
   margin-top: 20px;
   line-height: 1.6;
-}
+
+} 
 
 /* Experience Page css code */
 
@@ -324,252 +427,221 @@ ul {
   z-index: -1;
 }
 
-@media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-  .experience-table {display: block; padding: 0;}
-  .experience-tr {display: block; padding: 0; line-height: 2; text-align: center;}
-  .experience-td-picture {display: block; padding: 0; height: 200px;
-  }
-  .experience-td-info {display: block; padding: 0;
-  overflow: auto;}
-  .experience-pictures {width: 80%; height: auto; margin-bottom: 0;}
-}
-
-
-
-.experience-table {
-  border-collapse: collapse;
-  border-collapse: separate;
-  border-spacing: 0 20px;
-  display: block;
-  overflow: auto;
-}
-
-.experience-tr {
-  padding-bottom: 100px;
-}
-.experience-td-picture {
-  padding: 30px;
-}
-.experience-td-info{
-  position: relative;
-}
-
-.experience-cards {
-  padding-top: 0%;
-}
-
 .experience-page-section {
-  padding: 5% 12%  10% 12%;
-  display: block;
+  padding: 5% 12% 5% 12%;
   overflow: auto;
 }
 
 .experience-title {
   text-align: center;
 }
-/*
-.experience-card-picture {
-  float: left;
+
+.experience-cards {
+  height: auto;
+}
+
+.experience-table {
+  border-collapse: collapse;
+  display: table;
   width: 100%;
-  height: 3000px;
-  display: flex;
-  text-align: center;
+  margin: 0 auto;
+}
 
-}*/
+.experience-tr {
+  display: table-row;
+}
 
-.experience-card-info {
+.experience-td-picture, .experience-td-info {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.experience-td-picture {
+  padding: 30px;
+  width: 30%;  /* Keeping space allocation consistent */
+}
+
+.experience-td-info {
+  padding: 30px;
+  width: 70%;
 }
 
 .experience-pictures {
-  width: 230px;
+  width: 230px; /* Fixed width */
+  height: 160px; /* Fixed height */
   border-radius: 13%;
-  height: 160px;
   border: 2px solid;
   object-fit: scale-down;
-  margin-bottom: 100%;
+  margin-bottom: 20px; /* Consistent margin below the image */
 }
 
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+  .experience-title{
+    font-size: xx-large;
+  }
+  .experience-table {
+    display: block;
+  }
+
+  .experience-tr {
+    display: block;
+  }
+
+  .experience-td-picture {
+    display: block;
+    padding: 0;
+    width: 100%; /* Ensuring the picture container uses the full width */
+    text-align: center; /* Centering the image */
+  }
+
+  .experience-td-info {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center; /* Center text within the block */
+  }
+
+  .experience-pictures {
+    width: 230px; /* Fixed width remains constant */
+    height: 160px; /* Fixed height remains constant */
+    margin: 0 auto 20px; /* Centers image and adds space below */
+  }
+}
+
+
 /* Project Page css code */
+
 #Project-Page {
   background-color: #EAE3D2;
   position: relative;
-
-}
-
-@media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-  #table1 { display: block;}
-  .project-table {display: block;}
-  .project-table-cells {display: block;}
-  .project-slides {width: 100%; height: 50%; margin-bottom: 10%;}
-  .carousel-pictures {width: 100%; height: 40%; object-fit: scale-down; text-align: center;}
-  .project-pictures {width: 390px;}
 }
 
 .project-section {
   text-align: center;
   display: block;
   overflow: auto;
-  padding-bottom: 10%;
-
+  padding-bottom: 5%;
 }
 
 .project-title {
-  padding-top: 100px;
+  padding-top: 10%;
 }
 
+/* Default size for medium screens */
 .project-pictures {
-  width: 390px;
-  height: 230px;
-  border: 3px solid;
-  border-color: #607EAA;
-  opacity: 1;
+  width: 390px;  /* Fixed width */
+  height: 230px; /* Fixed height */
+  border: 3px solid #607EAA;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
-.project-pictures:hover{
-  background-color: black;
-}
-
-.project-table {
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-
-}
-
 table#table1 {
   width: 100%;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
   margin-top: 50px;
+} 
+
+
+.project-table-cells {
   position: relative;
-
+  padding: 10px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
 }
 
-
-.project-slides {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  text-align: center;
-}
-
-.carousel-pictures {
-  width: 700px;
-  height: 450px;
-  object-fit: cover;
-}
-
-.project-carousel {
-  width: 60%;
-  height: 450px;
-  display: block;
-  margin: auto auto auto auto;
+.project-hover {
+  position: relative;
+  width: 390px;
+  height: 230px;
+  margin: 0 auto;
 }
 
 .middle {
   position: absolute;
-  padding-left: 19%;
-  text-align: center;
+  top: 0;
+  left: 0;
+  width: 390px;
   height: 230px;
-  width: 385px;
+  background-color: rgba(0, 140, 186, 0.9);
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-.project-hover {
-  width: 80%;
-  margin: 0px auto;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
-
 
 .project-hover:hover .middle {
-  opacity: 0.9;
+  opacity: 1;
 }
 
-.project-text {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .3s ease;
-  color: black;
-}
-
-.hover-heading {
-  position: absolute;
-  right: 15%;
-}
-
-.hover-heading-cu {
-  position: absolute;
-  right: 20%;
-
+.project-sub-heading, .project-sub-info {
+  color: white;
+  text-align: center;
 }
 
 .project-hr {
   width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border: 2px solid black;
-  border-color: black;
-  color: black;
-  opacity: 1;
 }
 
-.project-sub-heading {
-  padding-top: 30px;
-  opacity: 1;
-  color: white;
-  text-align: center;
+/* Media query for larger screens */
+@media only screen and (min-width: 1200px) {
+  .project-pictures, .project-hover, .middle {
+    width: 600px; /* Larger size for larger screens */
+    height: 350px;
+  }
+
+  .project-table-cells {
+    padding: 30px;
+  }
 }
 
-.project-sub-info{
-  opacity: 1;
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+/* Responsive settings for smaller screens */
+@media only screen and (max-width: 760px) {
+  .project-pictures, .project-hover, .middle {
+    width: 350px; /* Smaller size for smaller screens */
+    height: 215px; /* Adjusted proportionally */
+  }
+
+  .project-table-cells {
+    width: 100%; /* Each cell takes full width */
+    padding: 10px; /* Smaller padding for tighter spaces */
+  }
+  .project-title{
+    font-size: xx-large;
+  }
+
+  table#table1 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5%;
+  } 
+  
 }
 
-.project-hover:hover .project-text{
-  width: 100%;
-  left: 0;
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  #table1 {
+    display: block;
+  }
+
+  .project-table-cells {
+    display: block;
+    width: 100%; /* Full width on medium screens */
+  }
+
+  .project-pictures, .project-hover, .middle {
+    width: 100%; /* Full width of the cell */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+  }
 }
 
-.project-table-cells {
-  padding-left: 0;
-
-}
 
 /* Baseball Page css code */
+
 #BaseballPage {
-
-}
-
-@media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-  .baseball-slides {padding-bottom: 10%; width: 100%;}
+  /* Add any base styles for this section if needed */
 }
 
 .baseball-div {
@@ -583,13 +655,12 @@ only screen and (max-width: 760px),
 
 .baseball-heading {
   text-align: center;
-
+  font-size: 2rem; /* Default font size for larger screens */
 }
 
 .baseball-slides {
   width: 100%;
   height: auto;
-
 }
 
 .baseball-pictures {
@@ -603,13 +674,121 @@ only screen and (max-width: 760px),
   width: 100%;
   height: 700px;
   display: block;
-  margin: auto auto auto auto;
+  margin: auto;
   position: relative;
   z-index: -1;
 }
 
+/* Responsive font sizes and layout adjustments for smaller screens */
+@media only screen and (max-width: 760px) {
+  .baseball-heading {
+    font-size: xx-large; /* Smaller font size for small screens */
+  }
+  .baseball-div p {
+    font-size: small;
+  }
+
+
+  .baseball-slides {
+    padding-bottom: 10%;
+    width: 100%;
+  }
+
+  .baseball-pictures {
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+
+  .baseball-carousel {
+    height: auto; /* Adjust carousel height to fit smaller screens */
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .baseball-heading {
+    font-size: xx-large; /* Slightly smaller font size for tablets */
+  }
+
+  
+  .baseball-slides {
+    padding-bottom: 10%;
+    width: 100%;
+  }
+
+  .baseball-pictures {
+    height: 500px; /* Slightly reduced height for tablets */
+  }
+
+  .baseball-carousel {
+    height: 500px; /* Adjust carousel height for tablets */
+  }
+}
+
 /* Contact Me Page css code */
-#Contact-Page {
+
+#ContactPage {
+  background-color: #607EAA;
+  position: relative;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  width: 100%;  /* Ensures the div takes full width */
+}
+
+.contact-heading {
+  color: white;
+  font-size: 2rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.contact-table {
+  width: 100%;  /* Full width */
+  display: flex;  /* Using flex to manage layout */
+  justify-content: center;  /* Centers the children horizontally */
+  flex-wrap: wrap;  /* Allows items to wrap in responsive layouts */
+}
+
+.contact-table tr {
+  flex: 1;  /* Ensures the row takes full width of its container */
+  display: flex;  /* Establishes a flex container */
+  justify-content: center;  /* Centers the td elements */
+  width: 100%;  /* Full width to spread across the parent */
+}
+
+.contact-table td {
+  padding: 20px;  /* Ample padding for spacing */
+  display: flex;  /* Flex layout for content alignment */
+  flex-direction: column;  /* Stacks the content vertically */
+  align-items: center;  /* Centers the content within each td */
+  text-align: center;
+}
+
+
+/* Responsive font sizes and layout adjustments for smaller screens */
+@media only screen and (max-width: 760px) {
+  .contact-heading {
+    font-size: 1.5rem; /* Reduced font size for smaller screens */
+  }
+
+  .contact-table td {
+    padding: 10px; /* Smaller padding for compact layout */
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .contact-heading {
+    font-size: 1.75rem; /* Intermediate font size for tablets */
+  }
+}
+
+
+
+/* #Contact-Page {
   background-color: #607EAA;
   position: relative;
 }
@@ -627,7 +806,7 @@ only screen and (max-width: 760px),
 .contact-table {
   display: table;
   margin: 0 auto;
-}
+} */
 
 /* Navbar section */
 .navbar {

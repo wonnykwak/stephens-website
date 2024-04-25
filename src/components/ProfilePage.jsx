@@ -15,7 +15,7 @@ function ProfilePage() {
   return <div id="ProfilePage" className="profile-page-div">
 
     <div className="profile-title-div"> <h1 className="profile-title title-heading"> About Me</h1>  <hr className="title-hr"/></div>
-    <div className="profile-intro"> <p > Hey! My name is Stephen Kwak. I'm a 20-year-old student at Pomona College currently majoring in Computer Science. Originally from Seoul, South Korea, I am now located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
+    <div className="profile-intro"> <p > Hey! My name is Stephen Kwak. I'm a 21-year-old student at Pomona College currently majoring in Computer Science and Math. Originally from Seoul, South Korea, I am now located in San Jose, California.  At school, I play for the Pomona-Pitzer Varsity Baseball team as a pitcher. I'm interested in pursuing my passion for Software Development and Artificial Intelligence in the future. I believe in working as a team, hard work, and trying new things... So please reach out!</p> </div>
     <div className="prof-info">
       <div className="profile-demographic" >
         <h2 className="title-heading2"> More Details </h2>
@@ -25,7 +25,7 @@ function ProfilePage() {
               <p> Age:  </p>
             </td>
             <td style={{paddingLeft: "10px"}}>
-              <p> 20 </p>
+              <p> 21 </p>
             </td>
           </tr>
           <tr>
@@ -33,7 +33,7 @@ function ProfilePage() {
               <p> Name:   </p>
             </td>
             <td style={{paddingLeft: "10px"}}>
-              <p> Stephen Yong Won Kwak </p>
+              <p> Stephen Kwak </p>
             </td>
           </tr>
           <tr>
@@ -82,7 +82,7 @@ function ProfilePage() {
             <td style={{textAlign: "left", paddingLeft:"10px"}}>
             <div className="resume-button">
 
-              <a href="https://drive.google.com/file/d/1yfOwma_-6DnHwK7gOfj_j_BizMRJ1qKP/view?usp=share_link">
+              <a href="https://drive.google.com/file/d/1mznxcYm5-Sbvs47Rvr3WplgfLWS39kdZ/view?usp=sharing">
 
                   <BsDownload style={{fontSize: "2rem"}}></BsDownload>
 
@@ -92,7 +92,7 @@ function ProfilePage() {
           </tr>
         </table>
       </div>
-      <div className="profile-pictures-section"> <img className="profile-picture" src="images/profilepic-modified.png" /> </div>
+      <div className="profile-pictures-section"> <img className="profile-picture" src="images/IMG_5433.jpeg" /> </div>
 
     </div>
     </div>

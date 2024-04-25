@@ -9,18 +9,22 @@ return (
   <Carousel fade>
     <Carousel.Item>
       <img className="baseball-pictures"
-        src="images/baseball1.jpeg"
+        src="images/C27A1298.JPG"
         alt="First slide"
       />
     </Carousel.Item>
-
     <Carousel.Item>
       <img className="baseball-pictures"
-        src="images/baseball2.jpeg"
+        src="images/C27A1319.JPG"
         alt="First slide"
       />
     </Carousel.Item>
-
+    <Carousel.Item>
+      <img className="baseball-pictures"
+        src="images/C27A1320.JPG"
+        alt="First slide"
+      />
+    </Carousel.Item>
     
   </Carousel>
   </div>
